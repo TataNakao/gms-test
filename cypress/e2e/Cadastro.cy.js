@@ -47,7 +47,7 @@ describe('US-012-Funcionalidade: Cadastro de membros', () => {
   })
 
   it('Deve fazer a validação do email duplicado', ()=>{
-    cy.preencherCadastro('thaise', 'nakao', 'fabio@teste.com', '2398765432', 'T@123aaaqa')
+    cy.preencherCadastro('thaise', 'nakao', 'Thaise1720485893984@teste.com', '2398765432', 'T@123aaaqa')
     cy.get('#signup-response').should('contain', 'Este email já está cadastrado.')
   })
 
